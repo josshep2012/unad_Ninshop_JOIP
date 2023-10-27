@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto Web Jose Idarraga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&family=Libre+Franklin:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="./css/style.css" >
+     
+</head>
+
+<body style="background-color: #ffffff; " class="bodyproducto"> 
+
+    <header>
+
+
+        <img src="./imagenes/NUEVAS_IMAGENES/NS.png " class="imglogons">
+
+   
+
+
+        <Nav class="Headernav">
+    
+            <a class="NavInicio" href="./index.html">INICIO</a>
+            <a class="NavProductos" href="./catproducto.html">PRODUCTOS</a>
+            <a id="tercera" href="./catformulario.html">PQRS</a>
+            <img src="./imagenes/NUEVAS_IMAGENES/NS.png " class="imglogons">
+          
+            
+           
+    
+        </Nav>
+    
+    
+        </header>
+  
+        <main class="main">
+
+
+            <section class="sectiontwo">
+
+
+
+                 <!-- contenedor uno -->
+
+          
+                   <div class="divcontenedor1">
+
+                    <div class="divopciones">
+                
+                      <BUtton id="bcategoria">CATEGORIAS</BUtton>
+                      <BUtton id="bprecios">PRECIOS</BUtton>
+                      <BUtton id="bdescuentos">DESCUENTOS</BUtton>
+                      <BUtton id="bfiltros">FILTROS</BUtton>
+                      <BUtton id="bayuda">¿INQUIETUDES?</BUtton>
+                    
+                        <a href="https://wa.me/3166128045"><img src="./imagenes/NUEVAS_IMAGENES/whatsapp.png" class="imgwhatsec2">  </a>                                                             
+   
+                                        
+                      </div>                                  
+                       
+                       <button class="panel-btn" id="btn-carritoc">
+                        <img src="./imagenes/NUEVAS_IMAGENES/carrito_de_compras.png" id="imgbtn">
+
+                      </button>
+                        
+
+
+                       <div class="panel">
+
+
+                        <table class="table1">
+
+                          <thead>
+  
+                            <div class="parrafo1">
+  
+                              <tr>
+
+                                <div class="divnumeral"><th scope="col">#</th></div>
+
+                                <div class="divname"><th scope="col">Item</th></div>
+
+                                <div class="divcantidad"> <th scope="col">Cantidad</th></div>
+                                
+                                <div class="divaccion"><th scope="col">Acción</th></div>
+                               
+                                <div class="total"><th scope="col">Total</th></div>
+                                
+                                
+                              </tr>
+
+                               
+
+                                
+                                            
+  
+                            </div>
+                            
+                          </thead>
+                          <tbody id="items"></tbody>
+                          <tfoot>
+                            <tr id="footer">
+                              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+
+
+
+
+
+
+                       </div>
+                       
+
+
+                       
+
+
+                        <template id="template-footer">
+                        <th scope="row" colspan="2">Total productos</th>
+                        <td>10</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                                vaciar todo
+                            </button>
+                        </td>
+                        <td class="font-weight-bold">$ <span>5000</span></td>
+                       </template>
+
+
+                       
+                        <template id="template-carrito">
+                        <tr>
+                          <th scope="row">id</th>
+                          <td>Café</td>
+                          <td>1</td>
+                          <td>
+                              <button class="btn btn-info btn-sm">
+                                  +
+                              </button>
+                              <button class="btn btn-danger btn-sm">
+                                  -
+                              </button>
+                          </td>
+                          <td>$ <span>500</span></td>
+                        </tr>
+                       </template>
+                                                             
+
+
+                      </div>                  
+
+
+
+
+
+                    </div>
+
+                      <!-- contenedor productos -->
+
+                    <div class="contenedorproductos">
+
+                      <!-- contenedor dos -->
+             
+
+                    <div class="contenedor2">
+
+
+                      <!-- producto 1 -->
+
+                      <div class="divproducto1" id="item1">
+
+
+                  
+
+                        <a class="ac1"><button class="charmander" id="">CHARMANDER</button></a>
+    
+                        <a><img src="./imagenes/NUEVAS_IMAGENES/CHARMANDER.jpg" class="imgcharmander"></a>
+                         
+                         <a><button class="btn-descrip" id="hideText-btn">Descripcion</button></a>
+                          
+                          <p class="precio1">12000</p>
+
+                          
+
+
+                          <button data-id="1" class="btn-comprar">Comprar</button>
+                           
+    
+    
+                      </div>
+
+
+                      <!-- producto 2 -->
+
+                      <div class="divproducto2" id="item2">
+
+
+                 
+                   
+                               
+                        <a><button id="luigi">LUIGI</button></a>
+      
+                        <a><img src="./imagenes/NUEVAS_IMAGENES/LUIGUI.png" class="imgluigi"></a>                                  
+                        
+                        <a><button class="btn-descrip" id="hideText-btn2">Descripcion</button></a>
+
+                        <p class="precio1">15000</p>
+                        <button data-id="2" class="btn-comprar">Comprar</button> 
+      
+                      </div>
+
+
+
+                      <!-- producto 3 -->
+
+                      <div class="divproducto3" id="item3">
+
+
+                        <a>
+    
+                         
+                        <button class="peach">PEACH</button>                
+    
+    
+                        </a>  
+
+                        <a> <img src="./imagenes/NUEVAS_IMAGENES/PEACH.jpg" class="imgpeach"></a>
+                        
+                        <a><button class="btn-descrip" id="hideText-btn3">Descripcion</button></a>
+
+                        <a><p class="precio1">16000</p></a>
+                        
+                        
+                        <button data-id="3" class="btn-comprar">Comprar</button> 
+                   
+    
+    
+                      </div>
+
+
+
+
+
+                     
+
+                    </div>  
+                    
+                    
+
+
+
+                    <!-- contenedor tres -->
+
+
+                    <div class="contenedor3">
+
+                    <!-- producto 4 -->
+
+
+                    <div class="divproducto4" id="item4">
+
+                      <a>
+                     
+                        <button class="mario">MARIO BROSS</button>
+                        
+      
+      
+                       </a>      
+
+
+                       <a><img src="./imagenes/NUEVAS_IMAGENES/mario.jpg" class="imgmario"></a>
+                       
+                       <a><button class="btn-descrip" id="hideText-btn4">Descripcion</button></a>
+
+                       <p class="precio1">14000</p>
+      
+                       <button data-id="4" class="btn-comprar">Comprar</button> 
+      
+      
+                    </div>
+
+
+
+
+                    <!-- producto 5 -->
+
+
+                    <div class="divproducto5" id="item5">
+
+              
+                      <a>
+   
+   
+                       <button id="link">LINK</button>
+                           
+   
+   
+   
+   
+                      </a>
+
+                      <a><img src="./imagenes/NUEVAS_IMAGENES/link.png" class="imglink"></a>
+
+                      <a><button class="btn-descrip" id="hideText-btn5">Descripcion</button></a> 
+
+                      <p class="precio1">17000</p>
+   
+                     
+                      <button data-id="5" class="btn-comprar">Comprar</button> 
+   
+   
+                    </div>
+
+
+
+
+                    <!-- producto 6 -->
+  
+                    <div class="divproducto6" id="item6">
+
+              
+                      <a>
+    
+    
+                      
+                
+    
+                       <button id="dkk">D. KING KONG </button>
+                       
+    
+    
+    
+    
+                      </a>
+
+
+                      <a><img src="./imagenes/NUEVAS_IMAGENES/dkk.png" class="imgdkk"></a>
+
+                      <a><button class="btn-descrip" id="hideText-btn6">Descripcion</button></a>
+
+                      <p class="precio1">13000</p>
+    
+                     
+                      <button data-id="6" class="btn-comprar">Comprar</button> 
+    
+    
+                    </div>
+                   
+                   
+
+
+
+
+
+                    </div>
+        
+
+
+
+
+
+                    </div>
+
+
+                    
+        
+
+           <!-- final section  -->
+
+
+
+
+           <span class="hidechar" id="hideText"><p class="txtdp1">Figura de acción de Charmander de 12cm. Charmander es un personaje de Pokemón el cual es descripto por la Pokédex así: "Una flama arde en la punta de su cola desde su nacimiento, se dice que el charmander muere si su flama llega a apagarse".
+          </p></span>
+
+          <span class="hideluigui" id="hideTextdos"><p class="txtdp2">Figura de acción de Luigi Bross de 12cm. Luigi Bross es el segundo fontanero mas famoso del mundo despues de mario su hermano mayor.
+          </p></span>
+
+          <span class="hidepeach" id="hideText3"><p class="txtdp3">Figura de acción de Peach de 12cm. Una princesa que siempre debia ser rescatada, pero ultimamente va en rescate de los demas.
+          </p></span>
+
+          <span class="hidemario" id="hideText4"><p class="txtdp4">Figura de acción de Mario Bross de 12cm. El fontanero mas famoso del mundo, junto con su hermano Luigi, su amor platonico Peach, siempres esta dispuesto a salvar el dia.
+          </p></span>
+
+          <span class="hidelink" id="hideText5"><p class="txtdp5">Figura de acción de Link de 12cm. El aclamado espadachin de la leyenda, nunca se rinde y luchahasta el final, se dice que destruye dragones y salva princesas.
+          </p></span>
+
+          
+          <span class="hidekong" id="hideText6"><p class="txtdp6">Figura de acción de Don King Kong de 12cm. don King Kong siempre esta dispuesto a luchar aunque parezca algo torpe la fuerza bruta es su habilidad.
+          </p></span> 
+
+        </section>
+
+        
+
+
+
+
+
+        </main>
+
+        <footer class="footercatproducto">
+
+    
+
+            <nav class="navimgfinales">
+             
+             <img src="./imagenes/NUEVAS_IMAGENES/logo-pare-y-compare.png" class="imgpareycompare">
+             <img src="./imagenes/NUEVAS_IMAGENES/LOGOSIC.png" class="imgsic">
+             <h2 id="byjss">By Jose Idarraga </h2>
+       
+             
+            </nav>
+           
+       
+       
+       
+       
+       
+           </footer>
+
+
+          
+
+
+
+           <script src="./archivos js/index_dom.js" type="module"></script>
+
+
+
+</body>
+
+</html>
